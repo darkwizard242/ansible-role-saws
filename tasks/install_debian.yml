@@ -1,0 +1,14 @@
+---
+# tasks file for saws - Debian
+
+- name: Installing {{ saws_debian_pre_reqs }} on Debian based systems as pre-requisite.
+  package:
+    name: "{{ saws_debian_pre_reqs }}"
+    state: "{{ saws_debian_pre_reqs_desired_state }}"
+    force_apt_get: yes
+
+- name: Installing {{ saws_app_debian_package }} on Debian based systems.
+  pip:
+    executable: "{{ saws_pip_executable }}"
+    name: "{{ saws_app_debian_package }}"
+    state: "{{ saws_desired_state }}"

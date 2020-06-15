@@ -1,0 +1,10 @@
+---
+# defaults file for saws
+
+saws_debian_pre_reqs:
+  - python3
+  - python3-pip
+saws_debian_pre_reqs_desired_state: present
+saws_pip_executable: pip3
+saws_app_debian_package: saws
+saws_desired_state: present
