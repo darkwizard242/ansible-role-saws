@@ -1,0 +1,28 @@
+---
+galaxy_info:
+  role_name: saws
+  author: Ali Muhammad
+  description: Installs saws using pip3 package, a super charged aws cli.
+  company: none
+  license: MIT
+  min_ansible_version: 2.4
+
+  platforms:
+    - name: Ubuntu
+      versions:
+        - bionic
+        - focal
+    - name: Debian
+      versions:
+        - buster
+
+  galaxy_tags:
+    - saws
+    - cli
+    - python
+    - framework
+    - aws
+    - os
+    - linux
+
+dependencies: []
