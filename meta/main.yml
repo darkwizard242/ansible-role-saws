@@ -1,7 +1,7 @@
 ---
 galaxy_info:
   role_name: saws
-  author: Ali Muhammad
+  author: darkwizard242
   description: Installs saws using pip3 package, a super charged aws cli.
   company: none
   license: MIT
