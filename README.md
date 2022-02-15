@@ -26,13 +26,13 @@ saws_desired_state: present
 
 ### Variables table:
 
-Variable                           | Value (default)      | Description
----------------------------------- | -------------------- | ----------------------------------------------------------------------------------------------------------------
-saws_debian_pre_reqs               | python3, python3-pip | Packages required to install **saws** on Debian based systems. Using python3 as python2.x is EOL by end of 2020.
-saws_debian_pre_reqs_desired_state | present              | Desired state for **saws** pre-requisite apps on Debian systems.
-saws_pip_executable                | pip3                 | The executable to utilize for installing **pip** package of `saws`.
-saws_app_debian_package            | saws                 | Name of saws application package require to be installed i.e. `saws` on Debian based systems.
-saws_desired_state                 | present              | Desired state for **saws**.
+Variable                           | Description
+---------------------------------- | ----------------------------------------------------------------------------------------------------------------
+saws_debian_pre_reqs               | Packages required to install **saws** on Debian based systems. Using python3 as python2.x is EOL by end of 2020.
+saws_debian_pre_reqs_desired_state | Desired state for **saws** pre-requisite apps on Debian systems.
+saws_pip_executable                | The executable to utilize for installing **pip** package of `saws`.
+saws_app_debian_package            | Name of saws application package require to be installed i.e. `saws` on Debian based systems.
+saws_desired_state                 | Desired state for **saws**.
 
 ## Dependencies
 
@@ -74,4 +74,4 @@ For customizing behavior of role (i.e. removal of **saws** package) in ansible p
 
 ## Author Information
 
-This role was created by [Ali Muhammad](https://www.linkedin.com/in/ali-muhammad-759791130/), a DevOps/CloudOps Engineer who loves to learn and contribute to Open Source community.
+This role was created by [Ali Muhammad](https://www.alimuhammad.dev/), a DevOps/CloudOps Engineer who loves to learn and contribute to Open Source community.
