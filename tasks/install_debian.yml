@@ -2,13 +2,13 @@
 # tasks file for saws - Debian/Ubuntu Family
 
 - name: Debian/Ubuntu Family | Installing {{ saws_debian_pre_reqs }} as pre-requisite.
-  package:
+  ansible.builtin.package:
     name: "{{ saws_debian_pre_reqs }}"
     state: "{{ saws_debian_pre_reqs_desired_state }}"
     force_apt_get: yes
 
 - name: Debian/Ubuntu Family | Installing {{ saws_app_debian_package }}
-  pip:
+  ansible.builtin.pip:
     executable: "{{ saws_pip_executable }}"
     name: "{{ saws_app_debian_package }}"
     state: "{{ saws_desired_state }}"
